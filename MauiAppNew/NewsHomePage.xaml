@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="false"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppNew.NewsHomePage"
+             Title="">
+    <Grid BackgroundColor="#0D0118" RowDefinitions=".05*,.1*,.45*,.05*,.05*,.3*">
+        <VerticalStackLayout>
+            <Button
+                x:Name="CounterBtn"
+                IsVisible="false"
+                Text=""
+                Clicked="OnImageButtonClicked"
+                HorizontalOptions="Center" />
+            <Label 
+                    Text="News Today"
+                    VerticalOptions="Center"
+                    FontSize="24"
+                    Margin="12"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+            <Grid Grid.Row="1" Margin="20,8,20,16">
+                <RoundRectangle
+                        Grid.Row="1"
+                        CornerRadius="20"
+                        Fill="#616972"
+                        Opacity="0.5"
+                        HeightRequest="46"/>
+                <SearchBar CancelButtonColor="White"
+                               Placeholder="Search"
+                               FontAttributes="Bold"
+                               PlaceholderColor="White"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+            </Grid>
+            <HorizontalStackLayout>
+                <Grid Grid.Row="1" Margin="20,6,0,10">
+                    <RoundRectangle
+                            Grid.Row="1"
+                            CornerRadius="12"
+                            Fill="White"
+                            WidthRequest="80"
+                            HeightRequest="40"/>
+                    <Label Text="For You"
+                               VerticalOptions="Center"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               TextColor="#0D0118"
+                               HorizontalOptions="Center" />
+                </Grid>
+                <Grid Grid.Row="1" Margin="8,6,0,10">
+                    <RoundRectangle
+                            Grid.Row="1"
+                            CornerRadius="12"
+                            Fill="#717F90"
+                            WidthRequest="100"
+                            HeightRequest="40"/>
+                    <Label Text="Technology"
+                               VerticalOptions="Center"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                </Grid>
+                <Grid Grid.Row="1" Margin="8,6,0,10">
+                    <RoundRectangle
+                            Grid.Row="1"
+                            CornerRadius="12"
+                            Fill="#516985"
+                            WidthRequest="100"
+                            HeightRequest="40"/>
+                    <Label Text="World"
+                               VerticalOptions="Center"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                </Grid>
+                <Grid Grid.Row="1" Margin="8,6,0,10">
+                    <RoundRectangle
+                            Grid.Row="1"
+                            CornerRadius="12"
+                            Fill="#154276"
+                            WidthRequest="100"
+                            HeightRequest="40"/>
+                    <Label Text="Positive"
+                               VerticalOptions="Center"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                </Grid>
+            </HorizontalStackLayout>
+            <Border HeightRequest="201"
+                    StrokeShape="RoundRectangle 12,12,12,12"
+                    HorizontalOptions="Center"
+                    Margin="18,14,18,10">
+                <Grid>
+                    <ImageButton
+                            Clicked="OnImageButtonClicked"
+                            Source="apple.png"
+                            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                            HorizontalOptions="Center"/>
+                    <VerticalStackLayout VerticalOptions="EndAndExpand" Margin="10,10,10,10">
+                        <Label 
+                                Text="MacRumors"
+                                VerticalOptions="Start"
+                                FontSize="12"
+                                Margin="0,0,0,2"
+                                FontAttributes="None"
+                                TextColor="#082D56"
+                                HorizontalOptions="Start" />
+                        <Label 
+                                Text="Apple's latest consumer flagship iPhone lineup with USB-C, Dynamic Island, and more"
+                                VerticalOptions="Start"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                TextColor="#05376F"
+                                HorizontalOptions="Start" />
+                        <Label 
+                                Text="October 11, 2023"
+                                VerticalOptions="Start"
+                                FontSize="10"
+                                Margin="0,0,0,4"
+                                FontAttributes="None"
+                                TextColor="#082D56"
+                                HorizontalOptions="Start" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <RoundRectangle
+                        Grid.Row="1"
+                        CornerRadius="20"
+                        Fill="#3A83D3"
+                        Margin="0,0,6,0"
+                        Opacity="0.5"
+                        WidthRequest="14"
+                        HeightRequest="14"></RoundRectangle>
+                <RoundRectangle
+                        Grid.Row="1"
+                        CornerRadius="20"
+                        Fill="#516985"
+                        Margin="0,0,6,0"
+                        Opacity="0.5"
+                        WidthRequest="14"
+                        HeightRequest="14"></RoundRectangle>
+                <RoundRectangle
+                        Grid.Row="1"
+                        CornerRadius="20"
+                        Fill="#516985"
+                        Opacity="0.5"
+                        WidthRequest="14"
+                        HeightRequest="14"></RoundRectangle>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Margin="20,16,20,10" HorizontalOptions="StartAndExpand">
+                <Border HeightRequest="90"
+                        WidthRequest="140"
+                        StrokeShape="RoundRectangle 12,12,12,12"
+                        HorizontalOptions="Center"
+                        StrokeThickness="0"
+                        Margin="0,0,0,0">
+                    <ImageButton
+                            Clicked="OnImageButtonClicked"
+                            Source="news3.jpeg"
+                            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"/>
+                </Border>
+                <VerticalStackLayout Margin="0,0,0,0" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="StartAndExpand">
+                        <Label 
+                                Text="usnews.com"
+                                VerticalOptions="StartAndExpand"
+                                FontSize="12"
+                                Margin="12,8,0,0"
+                                FontAttributes="Bold"
+                                TextColor="#5179A5"
+                                HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Grid HorizontalOptions="StartAndExpand" WidthRequest="300">
+                        <Label 
+                                Text="Health Providers Say AI Chatbots Could Improve Care"
+                                VerticalOptions="StartAndExpand"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                WidthRequest="220"
+                                Margin="12,4,20,0"
+                                TextColor="White"
+                                HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Grid HorizontalOptions="StartAndExpand" WidthRequest="300">
+                        <Label 
+                                Text="10 mins"
+                                VerticalOptions="StartAndExpand"
+                                FontSize="12"
+                                Margin="12,6,0,0"
+                                TextColor="#AFAFAF"
+                                HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Margin="20,16,20,10" HorizontalOptions="StartAndExpand">
+                <Border HeightRequest="90"
+                    WidthRequest="140"
+                    StrokeShape="RoundRectangle 12,12,12,12"
+                    HorizontalOptions="Center"
+                    StrokeThickness="0"
+                    Margin="0,0,0,0">
+                    <Image
+                    Source="news1.jpeg"
+                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                    HeightRequest="100"
+                    HorizontalOptions="Center"/>
+                </Border>
+                <VerticalStackLayout Margin="0,0,0,0" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="StartAndExpand">
+                        <Label 
+                        Text="usnews.com"
+                        VerticalOptions="StartAndExpand"
+                        FontSize="12"
+                        Margin="12,8,0,0"
+                        FontAttributes="Bold"
+                        TextColor="#5179A5"
+                        HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Grid HorizontalOptions="StartAndExpand" WidthRequest="300">
+                        <Label 
+                        Text="Web Summit CEO Resigns After Comments on Israel Conflict"
+                        VerticalOptions="StartAndExpand"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        Margin="12,4,20,0"
+                        WidthRequest="220"
+                        TextColor="White"
+                        HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Grid HorizontalOptions="StartAndExpand" WidthRequest="300">
+                        <Label 
+                        Text="25 mins"
+                        VerticalOptions="StartAndExpand"
+                        FontSize="12"
+                        Margin="12,6,0,0"
+                        TextColor="#AFAFAF"
+                        HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Margin="20,16,20,10" HorizontalOptions="StartAndExpand">
+                <Border HeightRequest="90" 
+                        WidthRequest="140"
+                        StrokeShape="RoundRectangle 12,12,12,12"
+                        HorizontalOptions="Center"
+                        StrokeThickness="0"
+                        Margin="0,0,0,0">
+                    <Image
+                        Source="news2.jpeg"
+                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                        HeightRequest="100"
+                        HorizontalOptions="Center"/>
+                </Border>
+                <VerticalStackLayout Margin="0,0,0,0" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="StartAndExpand">
+                        <Label 
+                    Text="usnews.com"
+                    VerticalOptions="StartAndExpand"
+                    FontSize="12"
+                    Margin="12,8,0,0"
+                    FontAttributes="Bold"
+                    TextColor="#5179A5"
+                    HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Grid HorizontalOptions="StartAndExpand" WidthRequest="300">
+                        <Label 
+                    Text="Spain's Space Expects First Orbital Launch in 2026 From Guiana"
+                    VerticalOptions="StartAndExpand"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    WidthRequest="220"
+                    Margin="12,4,20,0"
+                    TextColor="White"
+                    HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Grid HorizontalOptions="StartAndExpand" WidthRequest="300">
+                        <Label 
+                    Text="5 mins"
+                    VerticalOptions="StartAndExpand"
+                    FontSize="12"
+                    Margin="12,6,0,0"
+                    TextColor="#AFAFAF"
+                    HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

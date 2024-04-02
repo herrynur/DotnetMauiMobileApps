@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="false"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="usnews.com"
+             Shell.NavBarIsVisible="false"
+             Shell.BackgroundColor="#0D0118"
+             x:Class="MauiAppNew.NewsDetailPage">
+    <Grid BackgroundColor="#0D0118" RowDefinitions=".05*,.1*,.45*,.05*,.05*,.3*">
+        <VerticalStackLayout>
+            <Label 
+                Text="usnews.com"
+                VerticalOptions="Start"
+                FontSize="26"
+                Margin="12,10,0,0"
+                FontAttributes="Bold"
+                TextColor="#587799"
+                HorizontalOptions="Start" />
+            <Label 
+                Text="Today, 24 October 2023"
+                VerticalOptions="Start"
+                FontSize="12"
+                Margin="12,0,0,10"
+                FontAttributes="Bold"
+                TextColor="#C0C3C6"
+                HorizontalOptions="Start" />
+            <Grid>
+                <Border Grid.RowSpan="2" HeightRequest="232"
+                    StrokeShape="RoundRectangle 16"
+                    HorizontalOptions="Center"
+                    Margin="10,10,10,10">
+                    <Grid>
+                        <Image
+                            Source="apple.png"
+                            ScaleX="1.1"
+                            ScaleY="1.1"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            HeightRequest="358"/>
+                        <Grid Grid.Row="1" Margin="8,6,0,10">
+                            <RoundRectangle
+                                Grid.Row="1"
+                                CornerRadius="12"
+                                Margin="10,0,10,0"
+                                Fill="#465463"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                WidthRequest="100"
+                                HeightRequest="36"/>
+                            <Label Text="Technology"
+                                VerticalOptions="Start"
+                                FontSize="14"
+                                Margin="0,8,22,0"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                HorizontalOptions="End" />
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Label 
+                Text="Apple's latest consumer flagship iPhone lineup with USB-C, Dynamic Island, and more"
+                VerticalOptions="Start"
+                FontSize="20"
+                Margin="12,10,0,0"
+                FontAttributes="Bold"
+                TextColor="#D6D6D6"
+                HorizontalOptions="Start" />
+            <HorizontalStackLayout HorizontalOptions="Start" Spacing="230">
+                <Label 
+                    Text="MacRumors"
+                    VerticalOptions="Start"
+                    FontSize="14"
+                    Margin="12,6,0,0"
+                    FontAttributes="Bold"
+                    TextColor="#587799"
+                    HorizontalOptions="Start" />
+                <Label 
+                    Text="1h ago"
+                    VerticalOptions="End"
+                    FontSize="14"
+                    Margin="12,6,0,0"
+                    FontAttributes="Bold"
+                    TextColor="#587799"
+                    HorizontalOptions="End" />
+            </HorizontalStackLayout>
+            <Label 
+                Text="CUPERTINO, CALIFORNIA Apple today announced iPhone 15 and iPhone 15 Plus, featuring an industry-first color-infused back glass with a stunning, textured matte finish, and a new contoured edge on the aluminum enclosure. Both models feature the Dynamic Island, and an advanced camera system designed to help users take fantastic photos of everyday moments in their lives. A powerful 48MP"
+                VerticalOptions="Start"
+                FontSize="14"
+                Margin="12,20,12,0"
+                TextColor="#D6D6D6"
+                HorizontalOptions="Start" />
+            <Label 
+                Text="iPhone 15 and iPhone 15 Plus will be available in five stunning new colors: pink, yellow, green, blue, and black. Pre-orders begin Friday, September 15, with availability beginning Friday, September 22."
+                FontSize="14"
+                Margin="12,10,12,0"
+                TextColor="#D6D6D6"
+                HorizontalOptions="Start" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
